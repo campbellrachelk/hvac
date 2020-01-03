@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="24/7 Full Service Mechanical Contractor">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Lora&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
+
+    <title>Building Systems Solutions</title>
+
+    <style type="text/css">
+		/* Mobile First */ 
+    	body {
+    		margin:0;
+    		font-family:'Lora';
+    		font-family:'Crimson Text';
+    	}
+    	main {
+    		background: /*linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), */url(copper.jpg);
+		    background-size: cover;
+		    max-width: 100%;
+		    height: auto;
+		
+		    padding: 2.2rem;
+    	}
+
+    	h1 {
+    		padding: 1rem;
+    		max-width: 800px;
+		    margin: 0 auto;
+		    text-align: center;
+		    background-color: #0000007d;
+		    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+		    color: white;
+		    border-radius: 10px;
+		    font-size:1.3rem;
+		    
+    	}
+    	img {
+    		max-width:100%;
+    	}
+
+    	header {
+    		text-align:center;
+    	}
+
+    	nav {
+
+    	}
+
+    	ul {
+    		list-style:none;
+    		padding:0;
+    		margin:0;
+    	}
+
+    	li {
+    		display:inline-block;
+    		padding:1rem;
+    	}
+
+    	.services {
+    		display: grid;
+		    grid-template-columns: 1fr;
+		    margin: 0 auto;
+		    text-align: center;
+		    padding: 0;
+		    grid-gap: 6rem;
+    		margin: 2rem 1rem;
+    	}
+
+    	article {
+    		
+		    padding: 3.5rem;
+		    
+		     box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+
+    	}
+
+    	.article1 {
+    		background-image: url("image3.png");
+			  background-size:cover;
+			  color:white;
+    	}
+
+    	.article2 {
+    		background-image: url("image2.png");
+			  background-size:cover;
+			  color:white;
+    	}
+
+    	.article3 {
+    		background-image: url("image1.png");
+			  background-size:cover;
+			  color:white;
+    	}
+
+
+
+
+
+
+ /* Hover transition CSS */
+
+    	.overlay {
+		  position: absolute;
+		  /*top: 0;
+		  bottom: 0;*/
+		  left: 0;
+		  right: 0;
+		 /* height: 100%;
+		  width: 100%;
+		  opacity: 0;*/
+		  /*transition: .4s ease;*/
+		  background-color:#323436;
+		}
+
+		.container {
+		  position: relative;
+	
+}
+
+/*.container:hover .overlay {
+		  opacity: .9;
+		}*/
+
+.container:hover article {
+	/*opacity:.2;*/
+}
+
+.text {
+	  color: white;
+	  font-size: 20px;
+	  position: absolute;
+	  top: 50%;
+	 /* left: 50%;*/
+	  /*-webkit-transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%);*/
+	  transform: translate(-50%, -50%);
+	  text-align: center;
+	  border:2px solid white;
+	  background-color:#323436;
+	  max-width:50%;
+	  padding:1rem;
+	
+	}
+
+
+footer {
+	display:grid;
+	grid-template-columns:1fr;
+	text-align:center;
+	background-color: #f1f1f1;
+}
+
+	/* Desktop Specific Styles */
+
+@media only screen and (min-width:780px) {
+
+.services {
+    		display: grid;
+		    grid-template-columns: 1fr 1fr 1fr;
+		    margin: 0 auto;
+		    text-align: center;
+		    padding: 2rem;
+		    grid-gap: 2rem;
+    		margin: 3rem;
+    	}
+
+  h1	 {
+    		padding: 7rem;
+    		font-size:2rem;
+	   	}
+
+li {
+	padding:1.5rem;
+}
+
+main {
+	padding:6rem;
+}
+
+footer {
+	display:grid;
+	grid-template-columns:1fr 1fr;
+}
+
+
+
+
+/* Overlay Styles for Desktop */
+    	.overlay {
+		  position: absolute;
+		  top: 0;
+		  bottom: 0;
+		  left: 0;
+		  right: 0;
+		  height: 100%;
+		  width: 100%;
+		  opacity: 0;
+		  transition: .4s ease;
+		  background-color:#323436;
+		}
+
+		.container {
+		  position: relative;
+	
+}
+
+.container:hover .overlay {
+		  opacity: .9;
+		}
+
+.container:hover article {
+	/*opacity:.2;*/
+}
+
+.text {
+	  color: white;
+	  font-size: 20px;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  -webkit-transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+	  text-align: center;
+	  border:2px solid white;
+	  background-color:#323436;
+	  max-width:50%;
+	  padding:1rem;
+	
+	}
+
+
+}
+
+
+
+
+
+
+    </style>
+</head>
+
+
+
+
+<body>
+
+
+	<header>
+		<img src="BSSLogo.png" alt="Building Systems Solutions Logo">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="info.html">About Us</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+	<h1>Full Service Mechanical Contractor Providing 24/7 Heating, Refrigeration & Air Conditioning Maintenance, Repair, and Installation</h1>	
+	</main>
+
+
+<div class="services">
+
+
+	<div class="container">
+
+		<article class="article1">
+			<h2>Preventative Maintenance</h2>
+			<h3>Flexible Agreements Available</h3>
+		</article>
+		
+		<div class="overlay">
+    		<button class="text">Learn More About This Service</button>
+  		</div>
+
+	</div>
+
+
+
+	<div class="container">
+
+		<article class="article2">
+			<h2>Equipment Installation</h2>
+			<h3>Complete Comfort Systems</h3>
+		</article>
+		
+		<div class="overlay">
+    		<button class="text">Learn More About This Service</button>
+  		</div>
+
+	</div>
+
+
+
+	<div class="container">
+
+		<article class="article3">
+			<h2>System Repair</h2>
+			<h3>24/7 Emergency Service</h3>
+		</article>
+
+		<div class="overlay">
+    		<button class="text">Learn More About This Service</button>
+  		</div>
+
+	</div>
+
+
+</div>
+
+
+<article class="schedule">
+
+</article>
+
+
+<footer>
+	<p>Building Systems Solutions&copy; 2019</p>
+	<ul>
+		<li><a href="">Google Reviews</a></li>
+		<li><a href="">Facebook</a></li>
+		<li><a href="">Contact Us</a></li>
+		<li><a href="">Areas we Service</a></li>
+</footer>
+
+
+</body>
+
+
+</html>
