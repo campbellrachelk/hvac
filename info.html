@@ -34,6 +34,11 @@
             padding: 2.2rem;
         }
 
+        iframe {
+            width: 300px;
+            height:200px;
+        }
+
         h1 {
             padding: 1rem;
             max-width: 800px;
@@ -83,10 +88,11 @@
         }
 
         article {
-            
-            padding: 3.5rem;
-             box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
-
+                padding: 3.5rem;
+                max-width: 751px;
+                box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+                margin: 0 auto;
+                background-color: #f9f8f8;
         }
 
         .article1 {
@@ -98,11 +104,11 @@
               background-size:cover;
               color:white;
         }
-        img {
+        .openMe {
             transition: transform .2s;
         }
 
-        img:hover {
+        .openMe:hover {
             transform: scale(1.3);
         }
         .article3 {
@@ -200,6 +206,11 @@ main {
     padding:6rem;
 }
 
+ iframe {
+            width: 640px;
+            height:480px;
+        }
+
 footer {
     display:grid;
     grid-template-columns:1fr 1fr;
@@ -287,20 +298,22 @@ footer {
     <hr/>
 <br/>
     <div class="container areas">
+        <article>
         <h2>Letters of Recommendation:</h2>
         <div class="services">
             
-             <a href="AMCO - Letter of Recommendation.jpg" target="_blank"><img src="AMCO-mini.jpg"></a>
+             <a href="AMCO - Letter of Recommendation.jpg" target="_blank"><img class="openMe" src="AMCO-mini.jpg"></a>
             
-             <a href="HT - Letter of Recommendation.jpg" target="_blank"><img src="HTmini.jpg"></a>
+             <a href="HT - Letter of Recommendation.jpg" target="_blank"><img class="openMe" src="HTmini.jpg"></a>
             
         </div>
+    </article>
     </div>
 
 
     <div class="container areas">
             <h2>Areas We Service:</h2>
-            <iframe src="https://www.google.co.uk/maps/d/embed?mid=1j4qsaaFIalMwOCFlqocSrLL8axiWyVKf" width="640" height="480"></iframe>
+            <iframe src="https://www.google.co.uk/maps/d/embed?mid=1j4qsaaFIalMwOCFlqocSrLL8axiWyVKf"></iframe>
         
     </div>
 
