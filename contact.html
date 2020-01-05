@@ -3,8 +3,8 @@
 
 
 <head>
-	<meta charset="utf-8">
-	<meta name="description" content="24/7 Full Service Mechanical Contractor">
+    <meta charset="utf-8">
+    <meta name="description" content="24/7 Full Service Mechanical Contractor">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Lora&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
@@ -12,228 +12,256 @@
     <title>Building Systems Solutions</title>
 
     <style type="text/css">
-		/* Mobile First */ 
-    	body {
-    		margin:0;
-    		font-family:'Lora';
-    		font-family:'Crimson Text';
-    	}
-    	main {
-    		background: /*linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), */url(info.jpg);
-		    background-size: cover;
-		    max-width: 100%;
-		    height: auto;
-		
-		    padding: 2.2rem;
-    	}
+        /* Mobile First */ 
+        body {
+            margin:0;
+            font-family:'Lora';
+            font-family:'Crimson Text';
+        }
 
-    	h1 {
-    		padding: 1rem;
-    		max-width: 800px;
-		    margin: 0 auto;
-		    text-align: center;
-		    background-color: #0000007d;
-		    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
-		    color: white;
-		    border-radius: 10px;
-		    font-size:1rem;
-		    
-    	}
-    	img {
-    		max-width:100%;
-    	}
+        h2{
+            margin: 0 auto;
+            text-align:center;
+            max-width:800px;
+            padding:2rem;
+        }
+        main {
+            background: /*linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), */url(info.jpg);
+            background-size: cover;
+            max-width: 100%;
+            height: auto;
+        
+            padding: 2.2rem;
+        }
 
-    	header {
-    		text-align:center;
-    	}
+        iframe {
+            width: 300px;
+            height:200px;
+        }
 
-    	nav {
+        h1 {
+            padding: 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            background-color: #0000007d;
+            box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+            color: white;
+            border-radius: 10px;
+            font-size:1.3rem;
+            
+        }
+        img {
+            max-width:100%;
+        }
 
-    	}
+        header {
+            text-align:center;
+        }
 
-    	ul {
-    		list-style:none;
-    		padding:0;
-    		margin:0;
-    	}
+        nav {
 
-    	li {
-    		display:inline-block;
-    		padding:1rem;
-    	}
+        }
 
-    	.services {
-    		display: grid;
-		    grid-template-columns: 1fr;
-		    margin: 0 auto;
-		    text-align: center;
-		    padding: 0;
-		    grid-gap: 6rem;
-    		margin: 2rem 1rem;
-    	}
+        ul {
+            list-style:none;
+            padding:0;
+            margin:0;
+        }
+        hr {
+            max-width: 600px;
+        }
 
-    	article {
-    		
-		    padding: 3.5rem;
-		    
-		     box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+        li {
+            display:inline-block;
+            padding:1rem;
+        }
 
-    	}
+        .services {
+            display: grid;
+            grid-template-columns: 1fr;
+            margin: 0 auto;
+            text-align: center;
+            padding: 0;
+            grid-gap: 6rem;
+            max-width: 500px;
+        }
 
-    	.article1 {
-    		background-image: url("image3.png");
-			  background-size:cover;
-			  color:white;
-    	}
+        article {
+                padding: 3.5rem;
+                max-width: 751px;
+                box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+                margin: 0 auto;
+                background-color: #f9f8f8;
+        }
 
-    	.article2 {
-    		background-image: url("image2.png");
-			  background-size:cover;
-			  color:white;
-    	}
+        .article1 {
+              color:white;
+        }
 
-    	.article3 {
-    		background-image: url("image1.png");
-			  background-size:cover;
-			  color:white;
-    	}
+        .article2 {
+  
+              background-size:cover;
+              color:white;
+        }
+        img {
+            transition: transform .2s;
+        }
 
+        img:hover {
+            transform: scale(1.3);
+        }
+        .article3 {
+   
+              background-size:cover;
+              color:white;
+        }
 
+        .areas {
+            margin:0 auto;
+            text-align:center;
+            padding:2rem;
+        }
 
 
 
 
  /* Hover transition CSS */
 
-    	.overlay {
-		  position: absolute;
-		  /*top: 0;
-		  bottom: 0;*/
-		  left: 0;
-		  right: 0;
-		 /* height: 100%;
-		  width: 100%;
-		  opacity: 0;*/
-		  /*transition: .4s ease;*/
-		  background-color:#323436;
-		}
+        .overlay {
+          position: absolute;
+          /*top: 0;
+          bottom: 0;*/
+          left: 0;
+          right: 0;
+         /* height: 100%;
+          width: 100%;
+          opacity: 0;*/
+          /*transition: .4s ease;*/
+          background-color:#323436;
+        }
 
-		.container {
-		  position: relative;
-	
+        .container {
+          position: relative;
+    
 }
 
 /*.container:hover .overlay {
-		  opacity: .9;
-		}*/
+          opacity: .9;
+        }*/
 
 .container:hover article {
-	/*opacity:.2;*/
+    /*opacity:.2;*/
 }
 
 .text {
-	  color: white;
-	  font-size: 20px;
-	  position: absolute;
-	  top: 50%;
-	 /* left: 50%;*/
-	  /*-webkit-transform: translate(-50%, -50%);
-	  -ms-transform: translate(-50%, -50%);*/
-	  transform: translate(-50%, -50%);
-	  text-align: center;
-	  border:2px solid white;
-	  background-color:#323436;
-	  max-width:50%;
-	  padding:1rem;
-	
-	}
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+     /* left: 50%;*/
+      /*-webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);*/
+      transform: translate(-50%, -50%);
+      text-align: center;
+      border:2px solid white;
+      background-color:#323436;
+      max-width:50%;
+      padding:1rem;
+    
+    }
 
 
 footer {
-	display:grid;
-	grid-template-columns:1fr;
-	text-align:center;
-	background-color: #f1f1f1;
+    display:grid;
+    grid-template-columns:1fr;
+    text-align:center;
+    background-color: #f1f1f1;
 }
 
-	/* Desktop Specific Styles */
+    /* Desktop Specific Styles */
 
 @media only screen and (min-width:780px) {
 
 .services {
-    		display: grid;
-		    grid-template-columns: 1fr 1fr 1fr;
-		    margin: 0 auto;
-		    text-align: center;
-		    padding: 2rem;
-		    grid-gap: 2rem;
-    		margin: 3rem;
-    	}
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin: 0 auto;
+            text-align: center;
+            padding: 2rem;
+            grid-gap: 2rem;
+            max-width: 500px;
+        }
 
-  h1	 {
-    		padding: 7rem;
-    		font-size:2rem;
-	   	}
+  h1     {
+            padding: 7rem;
+            font-size:2rem;
+        }
 
 li {
-	padding:1.5rem;
+    padding:1.5rem;
 }
 
 main {
-	padding:6rem;
+    padding:6rem;
 }
 
+ iframe {
+            width: 640px;
+            height:480px;
+        }
+
 footer {
-	display:grid;
-	grid-template-columns:1fr 1fr;
+    display:grid;
+    grid-template-columns:1fr 1fr;
 }
 
 
 
 
 /* Overlay Styles for Desktop */
-    	.overlay {
-		  position: absolute;
-		  top: 0;
-		  bottom: 0;
-		  left: 0;
-		  right: 0;
-		  height: 100%;
-		  width: 100%;
-		  opacity: 0;
-		  transition: .4s ease;
-		  background-color:#323436;
-		}
+        .overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          transition: .4s ease;
+          background-color:#323436;
+        }
 
-		.container {
-		  position: relative;
-	
+        .container {
+          position: relative;
+    
 }
 
 .container:hover .overlay {
-		  opacity: .9;
-		}
+          opacity: .9;
+        }
 
 .container:hover article {
-	/*opacity:.2;*/
+    /*opacity:.2;*/
 }
 
 .text {
-	  color: white;
-	  font-size: 20px;
-	  position: absolute;
-	  top: 50%;
-	  left: 50%;
-	  -webkit-transform: translate(-50%, -50%);
-	  -ms-transform: translate(-50%, -50%);
-	  transform: translate(-50%, -50%);
-	  text-align: center;
-	  border:2px solid white;
-	  background-color:#323436;
-	  max-width:50%;
-	  padding:1rem;
-	
-	}
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+      border:2px solid white;
+      background-color:#323436;
+      max-width:50%;
+      padding:1rem;
+    
+    }
 
 
 }
@@ -252,38 +280,59 @@ footer {
 <body>
 
 
-	<header>
-		<img src="BSSLogo.png" alt="Building Systems Solutions Logo">
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="info.html">About Us</a></li>
-				<li><a href="services.html">Services</a></li>
-				<li><a href="contact.html">Contact Us</a></li>
-			</ul>
-		</nav>
-	</header>
-
-	<main>
-	<h1>Schedule your appointment today! <br/><a style="color:white;" href="tel:3014948155">
-		(301)-494-8155</a> <br/>
-	buildingsystemsolutionsmd@gmail.com</h1>	
-	</main>
+    <header>
+        <img src="BSSLogo.png" alt="Building Systems Solutions Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="info.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
 
+    <h2>Full Service Mechanical Contractor Providing 24/7 Heating, Refrigeration & Air Conditioning Maintenance, Repair, and Installation to the Maryland Area</h2>  <br/>
+
+    <hr/>
+<br/>
+    <div class="container areas">
+        <h2>Letters of Recommendation:</h2>
+        <div class="services">
+            
+             <a href="AMCO - Letter of Recommendation.jpg" target="_blank"><img src="AMCO-mini.jpg"></a>
+            
+             <a href="HT - Letter of Recommendation.jpg" target="_blank"><img src="HTmini.jpg"></a>
+            
+        </div>
+    </div>
+
+
+    <div class="container areas">
+            <h2>Areas We Service:</h2>
+            <iframe src="https://www.google.co.uk/maps/d/embed?mid=1j4qsaaFIalMwOCFlqocSrLL8axiWyVKf"></iframe>
+        
+    </div>
+
+
+    <aside class="schedule">
+        <h2>Schedule your appointment today! <br/><a href="tel:3014948155">
+            (301)-494-8155</a> <br/>
+        buildingsystemsolutionsmd@gmail.com</h2>    
+    </aside>
 
 
 <footer>
-	<p>Building Systems Solutions&copy; 2019</p>
-	<ul>
-		<li><a href="">Google Reviews</a></li>
-		<li><a href="">Facebook</a></li>
-		<li><a href="">Contact Us</a></li>
-		<li><a href="">Areas we Service</a></li>
+    <p>&copy; 2020 Building Systems Solutions</p>
+    <ul>
+        <li><a href="">Google Reviews</a></li>
+        <li><a href="">Facebook</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="info.html">Areas we Service</a></li>
 </footer>
 
 
+
 </body>
-
-
 </html>
