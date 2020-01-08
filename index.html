@@ -33,6 +33,11 @@
             font-family:'Lora';
             font-family:'Crimson Text';
         }
+
+        .contentWrapper {
+          max-width:1200px; 
+          margin:0 auto;
+        }
         main {
             background: /*linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), */url(bssbg.jpg);
             background-size: cover;
@@ -305,7 +310,7 @@ footer {
 
 
 <body>
-
+<div class="contentWrapper">
 
     <header>
         <img src="BSSLogo.png" alt="Building Systems Solutions Logo">
@@ -326,7 +331,7 @@ footer {
 
 
     <!--Carousel--> 
-<section class="testimonials py-5 px-1 px-md-5 margin-top-xl">
+<section class="testimonials py-5 px-1 px-md-5 margin-top-xl" style="padding-bottom:0 !important;">
  
   <div class="container">
     <div class="row">
@@ -438,9 +443,10 @@ and after‐hours emergencies. Building System Solutions has delivered excellent
         <li><a href="">Facebook</a></li>
         <li><a href="contact.html">Contact Us</a></li>
         <li><a href="info.html">Areas we Service</a></li>
+      </ul>
 </footer>
 
-
+</div> <!-- closing contentwrapper div -->
 </body>
 
 
