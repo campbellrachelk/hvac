@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Lora&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
+    <script src="https://kit.fontawesome.com/d6cc6890c0.js" crossorigin="anonymous"></script>
+
 
     <!-- Carousel Refs -->
     <link rel="stylesheet" href="style.css">
@@ -59,6 +61,11 @@
             font-size:1.3rem;
             
         }
+
+        .hideForMobile {
+            display:none;
+        }
+
         img {
             max-width:100%;
         }
@@ -235,7 +242,9 @@ footer {
     grid-template-columns:1fr 1fr;
 }
 
-
+.hideForMobile {
+  display:block;
+}
 
 
 /* Overlay Styles for Desktop */
@@ -325,7 +334,7 @@ footer {
     </header>
 
     <main>
-    <h1>Full Service Mechanical Contractor Providing 24/7 Heating, Refrigeration & Air Conditioning Maintenance, Repair, and Installation</h1>  
+    <h1>Full Service Mechanical Contractor <br class="hideForMobile"> Providing 24/7 <br class="hideForMobile"> Heating, Refrigeration & Air Conditioning <br class="hideForMobile"> Maintenance, Repair, and Installation</h1>  
     </main>
 
 
@@ -378,7 +387,7 @@ and after‐hours emergencies. Building System Solutions has delivered excellent
     <div class="containers">
 
         <article class="article1">
-            <h2>Preventative Maintenance</h2>
+            <h2>Preventive Maintenance</h2>
             <h3>Flexible Agreements Available</h3>
         </article>
         
@@ -427,9 +436,9 @@ and after‐hours emergencies. Building System Solutions has delivered excellent
   <aside>
         <h2>Let us help you save time and money by addressing minor deficiences <em>before</em> they become major headaches!</h2> <br/><hr/> <br/>
         <h2><strong>Schedule your appointment today! <br/>
-        <a href="tel:3014948155">
-        (301)-494-8155</a> <br/>
-        buildingsystemsolutionsmd@gmail.com</strong></h2><br/>
+        <a href="tel:4432628518">
+        (443)-262-8518</a> <br/>
+        <a href="mailto:buildingsystemssolutionsmd@gmail.com">buildingsystemsolutionsmd@gmail.com</a></strong></h2><br/>
 
         </aside>
 
@@ -440,7 +449,8 @@ and after‐hours emergencies. Building System Solutions has delivered excellent
     <p class="footerName">&copy; 2020 Building Systems Solutions</p>
     <ul>
         <li><a href="">Google Reviews</a></li>
-        <li><a href="">Facebook</a></li>
+        <li><a href=""><i class="fab fa-facebook"></i></a></li>
+        <li><a href=""><i class="fab fa-instagram"></i></a></li>
         <li><a href="contact.html">Contact Us</a></li>
         <li><a href="info.html">Areas we Service</a></li>
       </ul>
