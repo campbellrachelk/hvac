@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Lora&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
+    <script src="https://kit.fontawesome.com/d6cc6890c0.js" crossorigin="anonymous"></script>
 
     <title>Building Systems Solutions</title>
 
@@ -18,14 +19,20 @@
             font-family:'Lora';
             font-family:'Crimson Text';
         }
- .footerName {
+
+         .contentWrapper {
+          max-width:1200px; 
+          margin:0 auto;
+        }
+       .footerName {
             padding: 1.7rem 0;
         }
         h2{
             margin: 0 auto;
             text-align:center;
             max-width:800px;
-            padding:2rem;
+            padding:1rem;
+            font-size: 1.2rem;
         }
         main {
             background: /*linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), */url(info.jpg);
@@ -200,6 +207,9 @@ footer {
             padding: 7rem;
             font-size:2rem;
         }
+      h2 {
+        font-size:1.5rem;
+      }
 
 li {
     padding:1.5rem;
@@ -282,7 +292,7 @@ footer {
 
 <body>
 
-
+<div class="contentWrapper">
     <header>
         <img src="BSSLogo.png" alt="Building Systems Solutions Logo">
         <nav>
@@ -296,13 +306,13 @@ footer {
     </header>
 
 
-    <h2>Full Service Mechanical Contractor Providing 24/7 Heating, Refrigeration & Air Conditioning Maintenance, Repair, and Installation to the Maryland Area</h2>  <br/>
+    <h2>Full Service Mechanical Contractor Providing 24/7 Heating, Refrigeration & Air Conditioning Maintenance, Repair, and Installation</h2>  <br/>
 
     <hr/>
 <br/>
     <div class="container areas">
         <article>
-        <h2>Letters of Recommendation:</h2>
+        <h2>Letters of Recommendation:</h2> <br/>
         <div class="services">
             
              <a href="AMCO - Letter of Recommendation.jpg" target="_blank"><img class="openMe" src="AMCO-mini.jpg"></a>
@@ -317,27 +327,32 @@ footer {
     <div class="container areas">
             <h2>Areas We Service:</h2>
             <iframe src="https://www.google.co.uk/maps/d/embed?mid=1j4qsaaFIalMwOCFlqocSrLL8axiWyVKf"></iframe>
-        
     </div>
 
 
-    <aside class="schedule">
-        <h2>Schedule your appointment today! <br/><a href="tel:3014948155">
-            (301)-494-8155</a> <br/>
-        buildingsystemsolutionsmd@gmail.com</h2>    
-    </aside>
+  <aside  class="schedule">
+        <h2>Let us help you save time and money by addressing minor deficiences <em>before</em> they become major headaches!</h2> <br/><hr/> <br/>
+        <h2><strong>Schedule your appointment today! <br/>
+        <a href="tel:4432628518">
+        (443)-262-8518</a> <br/>
+        <a href="mailto:buildingsystemssolutionsmd@gmail.com">buildingsystemsolutionsmd@gmail.com</a></strong></h2><br/>
+
+  </aside>
+
 
 
 <footer>
     <p class="footerName">&copy; 2020 Building Systems Solutions</p>
     <ul>
         <li><a href="">Google Reviews</a></li>
-        <li><a href="">Facebook</a></li>
+        <li><a href=""><i class="fab fa-facebook fa-2x"></i></a></li>
+        <li><a href=""><i class="fab fa-instagram fa-2x"></i></a></li>
         <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="info.html">Areas we Service</a></li>
+      </ul>
 </footer>
 
 
 
+</div> <!-- close contentWrapper -->
 </body>
 </html>
