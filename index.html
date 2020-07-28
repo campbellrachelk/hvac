@@ -38,7 +38,11 @@
       }
 
       .contentWrapper {
-        margin-top:8rem;
+        margin-top:4rem;
+      }
+
+      .desktop {
+        display:none;
       }
 
       footer {
@@ -70,6 +74,11 @@
 
       .miniSummary {
         text-align:right;
+      }
+
+      .mobile {
+        display:block;
+        margin:1rem auto;
       }
 
       .quote {
@@ -129,6 +138,14 @@
 
       /* Desktop Specific Styles */
       @media only screen and (min-width:780px) {
+      
+      .contentWrapper {
+        margin-top:9rem;
+      }
+
+      .desktop {
+        display:block;
+      }
 
       .greaterMD {
         padding:2rem 0;
@@ -136,6 +153,10 @@
 
       main h1 {
         font-size:2.5rem;
+      }
+
+      .mobile {
+        display:none;
       }
         
       .quote {
@@ -156,7 +177,7 @@
       }
 
       .testimonials {
-        margin: 0 auto 10rem;
+        margin: 0 auto 4rem;
         padding:2rem;
       }
 
@@ -205,7 +226,7 @@
           </li>
         </ul>
       </div>
-      <a href="tel:4432628518">
+      <a class="desktop" href="tel:4432628518">
         <button type="button" class="btn btn-primary btn-lg">Call Now! (443)-262-8518</button>
       </a>
     </nav>
@@ -214,7 +235,9 @@
   </header>
 
   <div class="contentWrapper container">
-
+      <a class="mobile" href="tel:4432628518">
+        <button type="button" class="btn btn-primary btn-lg">Call Now! (443)-262-8518</button>
+      </a>
 
       <main>
       <h1>Full Service Mechanical Contractor Providing 24/7 Heating, Refrigeration & Air Conditioning Maintenance, Repair, and Installation</h1>  
