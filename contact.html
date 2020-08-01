@@ -4,384 +4,150 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TESTING Building System Solutions</title>
+
     <meta name="description" content="24/7 Full Service Mechanical/HVAC Contractor Servicing the Maryland, D.C, Delaware, and Virginia Areas">
     <meta name="keywords" content="HVAC, Queen Anne's County, Air Conditioning, Heating, Mechanical Contractor, Maryland, air conditioning repair, ductless heating and cooling, heating and cooling services, air conditioner near me, ac not turning on, hvac repair, family heating and cooling, furnace repair, corporate hvac, air condition repair, ac service, air conditioner not cooling, heater not heating, heater broken, air conditioner near me, building systems solutions, building system solutions llc, michael younger hvac">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Lora&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/d6cc6890c0.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
 
-    <title>Building Systems Solutions</title>
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- End JS -->
+
+
+    <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d6cc6890c0.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+
 
     <style type="text/css">
-		/* Mobile First */ 
-
-        /* Header Styles  */
-
-          header {
-            display:grid;
-            grid-template-columns: 1fr;
-            text-align:center;
-            background-color:white;
-            width:100%;
-            margin: 0 auto;
-          }
-
-          .headerImage {
-            max-width:52%;
-            border-radius:10px;
-            margin:.5rem;
-          }
-
-          nav li {
-            display:inline-block;
-            margin:1rem;
-            padding:0;
-          }
-
-
-
-        /*  Body Styles  */
-
-        a {
-          color: #0275d8;
-        }
-
-    	body {
-    		margin:0;
-    		font-family:'Lora';
-    		font-family:'Crimson Text';
-            background-color:#ede7e35e;
-    	}
-
-    	 .contentWrapper {
-          margin:0 auto;
-        }
-    	main {
-    		background: /*linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), */url(info.jpg);
-		    background-size: cover;
-		    max-width: 100%;
-		    height: auto;
-		
-		    padding: 2.2rem;
-    	}
-    	main a {
-    		color:white;
-    	}
-
-    	nav a {
-    		color: #014c8c;
-    	}
-    	h1 {
-    		padding: 1rem;
-    		max-width: 800px;
-		    margin: 0 auto;
-		    text-align: center;
-		    background-color: #0000007d;
-		    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
-		    color: white;
-		    border-radius: 10px;
-		    font-size:1rem;
-		    font-weight:normal;
-		    
-    	}
-    	   .sideBar {
-          color: black;
-          background-color:white;
-          text-align: center;
-          position: fixed;
-          bottom: 141px;
-          z-index: 2;
-          font-size: 1rem;
-          padding: .2rem;
-          margin: 0 auto;
-        }
-
-    	img {
-    		max-width:100%;
-    	}
-    	header {
-    		text-align:center;
-    	}
-    	
-    	ul {
-    		list-style:none;
-    		padding:0;
-    		margin:0;
-    	}
-    	li {
-    		display:inline-block;
-    		padding:1rem;
-    	}
-    	.services {
-    		display: grid;
-		    grid-template-columns: 1fr;
-		    margin: 0 auto;
-		    text-align: center;
-		    padding: 0;
-		    grid-gap: 6rem;
-    		margin: 2rem 1rem;
-    	}
-    	article {
-            background-color:white;
-		    padding: 3.5rem;
-		    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
-    	}
-    	.article1 {
-    		background-image: url("image3.png");
-			  background-size:cover;
-			  color:white;
-    	}
-    	.article2 {
-    		background-image: url("image2.png");
-			  background-size:cover;
-			  color:white;
-    	}
-    	.article3 {
-    		background-image: url("image1.png");
-			  background-size:cover;
-			  color:white;
-    	}
- /* Hover transition CSS */
-    	.overlay {
-		  position: absolute;
-		  /*top: 0;
-		  bottom: 0;*/
-		  left: 0;
-		  right: 0;
-		 /* height: 100%;
-		  width: 100%;
-		  opacity: 0;*/
-		  /*transition: .4s ease;*/
-		  background-color:#323436;
-		}
-		.container {
-		  position: relative;
-	
-}
-/*.container:hover .overlay {
-		  opacity: .9;
-		}*/
-.container:hover article {
-	/*opacity:.2;*/
-}
-.text {
-	  color: white;
-	  font-size: 20px;
-	  position: absolute;
-	  top: 50%;
-	 /* left: 50%;*/
-	  /*-webkit-transform: translate(-50%, -50%);
-	  -ms-transform: translate(-50%, -50%);*/
-	  transform: translate(-50%, -50%);
-	  text-align: center;
-	  border:2px solid white;
-	  background-color:#323436;
-	  max-width:50%;
-	  padding:1rem;
-	
-	}
-footer {
-	display:grid;
-	grid-template-columns:1fr;
-	text-align:center;
-	box-shadow:0px 3px 15px rgba(0,0,0,0.2);
-    background-color:white;
-}
-
- .footerName {
-            padding: 1.7rem 0;
-        }
-	/* Desktop Specific Styles */
-@media only screen and (min-width:780px) {
-
-
-	/* Header Styles */
-		/* Header Styles  */
-
-          header {
-            display:grid;
-            grid-template-columns:36% 1fr;
-            text-align:center;
-            position:fixed;
-            top:0;
-            z-index:2;
-            background-color:white;
-            width:100%;
-            margin: 0 auto;
-            box-shadow:0px 3px 15px rgba(0,0,0,0.2);
-          }
-
-          .headerImage {
-            max-width:38%;
-            border-radius:10px;
-            margin:.5rem;
-          }
-
-          .header {
-            font-size:1rem;
-            text-align:right;
-            margin-right:4rem;
-          }
-
-          nav li {
-            display:inline-block;
-            margin:1rem;
-            border-radius:10px;
-            box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
-            background-image: linear-gradient(to bottom, #fafafa, #ffffff);
-            padding:1rem;
-
-          }
-
-          nav ul {
-            padding:1rem 0;
-          }
-
-
-	/* Body Styles */
-		.contentWrapper {
-			max-width: 1200px;
-            margin: 16rem auto 8rem;
-        }
-
- 		.sideBar {
-          bottom: 127px;
-          left: 9px;
-          font-size: 1.5rem;
-          padding: 1rem;
-        }
-
-	
-		.services {
-    		display: grid;
-		    grid-template-columns: 1fr 1fr 1fr;
-		    margin: 0 auto;
-		    text-align: center;
-		    padding: 2rem;
-		    grid-gap: 2rem;
-    		margin: 3rem;
-    	}
- 		h1 {
-    		padding: 3rem;
-    		font-size:2rem;
-	   	}
-
-		li {
-			padding:1.5rem;
-		}
-
-		main {
-			padding:5rem;
-		}
-
-		main i {
-			margin:1rem;
-		}
-
-		footer {
-			display:grid;
-			grid-template-columns:1fr 1fr;
-		}
-
-/* Overlay Styles for Desktop */
-    	.overlay {
-		  position: absolute;
-		  top: 0;
-		  bottom: 0;
-		  left: 0;
-		  right: 0;
-		  height: 100%;
-		  width: 100%;
-		  opacity: 0;
-		  transition: .4s ease;
-		  background-color:#323436;
-		}
-
-		.container {
-		  position: relative;	
-		}
-
-		.container:hover .overlay {
-		  opacity: .9;
-		}
-
-		.text {
-		  color: white;
-		  font-size: 20px;
-		  position: absolute;
-		  top: 50%;
-		  left: 50%;
-		  -webkit-transform: translate(-50%, -50%);
-		  -ms-transform: translate(-50%, -50%);
-		  transform: translate(-50%, -50%);
-		  text-align: center;
-		  border:2px solid white;
-		  background-color:#323436;
-		  max-width:50%;
-		  padding:1rem;
-		}
-}
+      
 
     </style>
+
+
 </head>
 
 
+  <body>
+
+  <header>
+
+    <!-- Bootstrap NAV -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">
+          <img src="BSSLogo.png" class="align-top" alt="" loading="lazy">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <a class="desktop" href="tel:4432628518">
+        <button type="button" class="btn btn-primary btn-lg">Call Now! (443)-262-8518</button>
+      </a>
+    </nav>
+    <!-- End Nav --> 
+
+  </header>
+
+  <div class="contentWrapper container">
+      <a class="mobile" href="tel:4432628518">
+        <button type="button" class="btn btn-primary btn-lg">Call Now! (443)-262-8518</button>
+      </a>
 
 
-<body>
 
-    <header>
-        <div class="headerImageBox">
-          <img class="headerImage" src="BSSLogo.png" alt="Building System Solutions Logo">
+
+ </div><!-- close .contentWrapper -->
+  <footer>
+      <article class="schedule">
+
+
+                <!--Inquire today!?-->
+                <h2><strong>Schedule your appointment today! <br/></strong></h2>
+               
+         <form method="POST" name="myemailform" action="form-to-email.php">
+
+                      <div class="form-group row">
+          <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+          <div class="col-sm-10">
+            <input type="name" name="name" class="form-control" id="inputName" placeholder="Name">
+          </div>
         </div>
-        
-        <nav class="header">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="info.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-
-<div class="contentWrapper">
-
-
-	<main>
-        <h1><strong>
-        Schedule your appointment today! <br/>
-        <a href="tel:4432628518">
-        (443)-262-8518</a> <br/>
-        <a href="mailto:buildingsystemssolutionsmd@gmail.com">hvac@buildingsystemsolutionsllc.com</a><br/></strong></h1><br/>
-	</main>
-
-<br/> <br/>
-
-
-
-<div class="sideBar">
-          <a href="tel:4432628518"><i class="fas fa-phone-square fa-2x"></i></a> <br/>
-          
-          <a href="mailto:hvac@buildingsystemsolutionsllc.com"><i class="fas fa-envelope-square fa-2x"></i></a><br/>
-
-          <a rel="noopener" href="https://www.instagram.com/bss.llc.md/" target="_blank"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a><br/>
-
-          <a rel="noopener" href="https://www.facebook.com/bssllcmd" target="_blank"><i class="fab fa-facebook fa-2x" aria-hidden="true"></i></a>
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" name="email" class="form-control" id="inputEmail3" placeholder="Email">
+          </div>
+        </div>
+          <div class="form-group row">
+          <label for="inputPhone" class="col-sm-2 col-form-label">Phone</label>
+          <div class="col-sm-10">
+            <input type="text" name="phone" class="form-control" id="inputPhone" placeholder="Phone Number">
+          </div>
+        </div>
+            <div class="form-group row">
+          <label for="inputMessage" class="col-sm-2 col-form-label">Message</label>
+          <div class="col-sm-10">
+            <textarea type="text" name="message" class="form-control" id="inputMessage" placeholder="Type Message Here" rows="3"></textarea>
+          </div>
         </div>
 
-</div> <!-- closing contentWrapper-->
+        <div class="form-group row" style="margin:0 auto;">
+          <div class="col-sm-6" style="text-align:right;">Preferred Contact Method</div>
+          <div class="col-sm-6" style="text-align:left;">
+            <div class="form-check" style="display:inline-block; margin:auto 1rem">
+              <input class="form-check-input" name="preferredPhone" type="checkbox" id="gridCheck1">
+              <label class="form-check-label" for="gridCheck1">
+                Phone
+              </label>
+            </div>
+                  <div class="form-check" style="display:inline-block; margin:auto 1rem">
+              <input class="form-check-input" name="preferredEmail" type="checkbox" id="gridCheck2">
+              <label class="form-check-label" for="gridCheck2">
+                E-mail
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-12">
+            <button type="submit" name="submit" value="submit" class="btn btn-primary btn-lg">Submit</button>
+          </div>
+        </div>
+      </form>
 
-<footer>
-    <p class="footerName">&copy; Building System Solutions</p>
-    <ul>
-       <!--  <li><a href="">Google Reviews</a></li> -->
-        <li><a href="https://www.facebook.com/bssllcmd" target="_blank"><i class="fab fa-facebook fa-2x"></i></a></li>
-        <li><a href="https://www.instagram.com/bss.llc.md/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-</footer>
 
+
+    </article>
+      
+      
+      <p><a rel="noopener" href="https://www.facebook.com/bssllcmd" target="_blank"><i class="fab fa-facebook fa-2x"></i></a><span><a rel="noopener" href="https://www.instagram.com/bss.llc.md/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></span></p>
+      <a href="tel:4432628518">
+          (443)-262-8518</a> <br/>
+          <a href="mailto:hvac@buildingsystemsolutionsllc.com">hvac@buildingsystemsolutionsllc.com</a></strong>
+      <p>108 Carroll Road, Centreville, MD 21617</p>
+            <p class="footerName">&copy; Building System Solutions</p>
+
+  </footer>
 </body>
 </html>
