@@ -96,11 +96,29 @@
         text-align:left;
       }
 
+      .info {
+        text-align:center;
+        margin: 0 auto;
+        max-width:900px;
+      }
+
+      .images {
+        margin:0;
+        padding:0;
+        text-align:center;
+      }
+
+      .images img {
+        margin:1rem 0;
+        border-radius:50%;
+        max-width:30%;
+      }
+
       .lists {
         background-color: #f4f4f4;
         padding: 2rem;
         max-width: 800px;
-        margin:2rem auto;
+        margin: 0 auto;
       }
 
       .Main__Inner-sc-1ue84g4-1 {
@@ -112,7 +130,6 @@
         font-size:1.4rem;
         max-width:1200px;
         text-align:center;
-        padding:0 11rem;
       }
 
       .miniSummary {
@@ -166,7 +183,7 @@
         padding:0;
       }
 
-      .summary h4, .summary h2 {
+      .summary h4, .summary h2, .info h4, .info h2 {
         font-size:1.3rem;
         font-weight:700;
         color:#0067bb;
@@ -176,6 +193,13 @@
         margin:0 auto;
         padding:10px;
         background-color:#e5e5e5;
+      }
+
+      .insured {
+        text-align:center;
+        background-color:#4c4c4c;
+        color:#f4f4f4;
+        padding:1.3rem;
       }
 
 
@@ -199,8 +223,24 @@
         padding:2rem 0;
       }
 
+      .images {
+        text-align-last: justify;
+        margin: 2rem auto;
+        max-width:1200px;
+      }
+
+      .images img {
+        max-width:100%;
+      }
+
+      .lists {
+        margin:2rem auto;
+      }
+
       main h1 {
         font-size:3rem;
+        padding:0 11rem;
+
       }
 
       .mobile {
@@ -224,15 +264,15 @@
         grid-template-columns:auto auto;
       }
 
-      .summary h4 {
+      .summary h4, .info h4 {
         font-size:1.5rem;
       }
 
-      .summary h2 {
+      .summary h2, .info h2 {
         font-size:2rem;
       }
 
-      .testimonials {
+      .testimonials, .insured {
         margin: 0 auto 4rem;
         padding:2rem;
       }
