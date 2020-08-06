@@ -255,6 +255,10 @@
         display:block;
       }
 
+      footer {
+        margin-top:7rem;
+      }
+
       .greaterMD {
         padding:2rem 0;
       }
