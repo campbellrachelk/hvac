@@ -73,6 +73,8 @@
         left: auto;
       }
 
+
+
       body {
         font-family: 'Nunito Sans', sans-serif;
         margin:10px;
@@ -99,6 +101,7 @@
 
       .hvac {
         text-align:center;
+        margin-bottom:6rem;
       }
 
       img {
@@ -153,10 +156,6 @@
         text-align:center;
       }
 
-      .miniSummary {
-        text-align:right;
-      }
-
       .mobile {
         display:block;
         margin:0;
@@ -173,6 +172,10 @@
         margin:1rem;
       }
 
+      .repair {
+        margin-bottom:2rem;
+      }
+
       .right {
         text-align:right;
       }
@@ -182,6 +185,10 @@
         padding: 1rem;
         background-color: #e5e5e5;
         max-width: 100%;
+        border-left: ridge 18px #0090d2;
+        -webkit-box-shadow: inset 0px 0px 15px 2px rgba(217,217,217,1);
+        -moz-box-shadow: inset 0px 0px 15px 2px rgba(217,217,217,1);
+        box-shadow: inset 0px 0px 15px 2px rgba(217,217,217,1);
       }
 
       .services {
@@ -205,7 +212,7 @@
       }
 
       .summary h4, .summary h2, .info h4, .info h2 {
-        font-size:1.3rem;
+        font-size:1.4rem;
         font-weight:700;
         color:#0067bb;
       }
@@ -235,11 +242,21 @@
         padding:1.3rem;
       }
 
-
-
+      /* Weird Google Review Heading Hider */
+      .fsghtg {
+        display:none;
+      }
       /* Desktop Specific Styles */
       @media only screen and (min-width:780px) {
 
+      .alignRightCenter {
+        text-align:right;
+      }
+
+      .alignLeftCenter {
+        text-align:left;
+      }
+        
       body {
         margin:0;
       }
@@ -258,6 +275,10 @@
 
       .desktop {
         display:block;
+      }
+
+      .hvac {
+        margin-bottom:.5rem;
       }
 
       footer {
@@ -286,6 +307,11 @@
         font-size:2.8rem;
         padding:2rem 11rem;
       }
+
+      .miniSummary {
+        text-align:right;
+      }
+
 
       .mobile {
         display:none;
