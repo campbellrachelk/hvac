@@ -270,6 +270,12 @@
 
 
 /* Google Review Styling */
+
+     .google {
+        margin:0 auto 8rem;
+        text-align:center;
+      }
+
  #map-plug {display:none;}
 
 #google-reviews {
@@ -389,11 +395,7 @@ line-height:1;
         margin-top:7rem;
       }
 
-      .google {
-        margin:0 auto;
-        text-align:center;
-      }
-
+ 
       .greaterMD {
         padding:2rem 0;
       }
