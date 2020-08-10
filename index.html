@@ -10,7 +10,6 @@
     <meta name="description" content="24/7 Full Service Mechanical/HVAC Contractor Servicing the Maryland, D.C, Delaware, and Virginia Areas">
     <meta name="keywords" content="HVAC, Queen Anne's County, Air Conditioning, Heating, Mechanical Contractor, Maryland, air conditioning repair, ductless heating and cooling, heating and cooling services, air conditioner near me, ac not turning on, hvac repair, family heating and cooling, furnace repair, corporate hvac, air condition repair, ac service, air conditioner not cooling, heater not heating, heater broken, air conditioner near me, building systems solutions, building system solutions llc, michael younger hvac">
 
-
     <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
@@ -162,10 +161,11 @@
         <p class="small right"><a href="20ridgely.jpg" target="_blank">Read full letter of recommendation here</a></p>
    
     </section>
- <h2 style="text-align:center;">Customer Reviews</h2>
- <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-11eef480-efbf-45b4-9923-39305be0d57e"></div>
-
+  
+<aside class="google">
+    <div id="google-reviews"></div>
+    <button class="btn btn-primary btn-lg"><a href="https://www.google.com/search?q=buioding+system+solutions+llc&rlz=1C1CHBF_enUS838US838&oq=buioding+system+solutions+llc&aqs=chrome..69i57j46j0l2.3058j0j7&sourceid=chrome&ie=UTF-8#lrd=0x89b80d80595cbf27:0x167043e1d3a0e2eb,1,,,">Read All Google Reviews</a></button>
+</aside>
  <!--  <div class="services">
 
 
@@ -212,15 +212,11 @@
       
 
 
-
-<!-- Have overlapping piece like Matt Farley's website for a 'contact us' submit form --> 
-
   </div> <!-- closing contentwrapper div -->
 
 
   <footer>
       <article class="schedule effect8">
-
 
           <!--Inquire today!?-->
           <h2><strong>Schedule your appointment today! <br/></strong></h2>
@@ -280,15 +276,13 @@
 
   </article>
       
-      
-  <!--         <li><a href="">Google Reviews</a></li>
-   -->        <p><a rel="noopener" href="https://www.facebook.com/bssllcmd" target="_blank"><i class="fab fa-facebook fa-2x"></i></a><span><a rel="noopener" href="https://www.instagram.com/bss.llc.md/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></span></p>
-      <a href="tel:4432628518">
-          (443)-262-8518</a> <br/>
-          <a href="mailto:hvac@buildingsystemsolutionsllc.com">hvac@buildingsystemsolutionsllc.com</a></strong>
-      <p>108 Carroll Road, Centreville, MD 21617</p>
-            <p class="footerName">&copy; Building System Solutions</p>
-
+      <address>
+        <a rel="noopener" href="https://www.facebook.com/bssllcmd" target="_blank"><i class="fab fa-facebook fa-2x"></i></a><span><a rel="noopener" href="https://www.instagram.com/bss.llc.md/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></span><br/>
+        <a href="tel:4432628518">(443)-262-8518</a> <br/>
+        <a href="mailto:hvac@buildingsystemsolutionsllc.com">hvac@buildingsystemsolutionsllc.com</a><br/>
+        108 Carroll Road, Centreville, MD 21617<br/>
+        &copy; Building System Solutions
+      </address>
   </footer>
 
 
@@ -297,6 +291,22 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/d6cc6890c0.js" crossorigin="anonymous"></script>
+
+    <!-- Google Review Link Scripts -->
+      <script src="https://cdn.jsdelivr.net/gh/stevenmonson/googleReviews@6e8f0d794393ec657dab69eb1421f3a60add23ef/google-places.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAAocDF5itweokPhO02TU7MW4pf2-5hwHw&signed_in=true&libraries=places"></script>
+    <!-- -->
+
+    <script>
+    jQuery(document).ready(function( $ ) {
+       $("#google-reviews").googlePlaces({
+            placeId: 'ChIJJ79cWYANuIkR6-Kg0-FDcBY' //Find placeID @: https://developers.google.com/places/place-id
+          , render: ['reviews']
+          , min_rating: 4
+          , max_rows:4
+       });
+    });
+    </script>
     <!-- End JS -->
 
 </body>
