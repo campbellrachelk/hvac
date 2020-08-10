@@ -271,6 +271,10 @@
 
 /* Google Review Styling */
 
+.review-sep {
+  display:none;
+}
+
      .google {
         margin:0 auto 8rem;
         text-align:center;
@@ -301,7 +305,7 @@ text-align:center;
   .review-item { flex: 1 1 90%; }
 }
 
-.review-meta, .review-stars {text-align:center; font-size:115%;}
+.review-meta, .review-stars {text-align:center; font-size:120%;}
 .review-author { text-transform: capitalize; font-weight:bold; }
 .review-date {opacity:.6; display:block;}
 .review-text {  line-height:1.55; text-align:left; max-width:32em; margin:auto;}
