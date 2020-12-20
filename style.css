@@ -460,12 +460,12 @@ line-height:1;
 
       main h1  {
         margin:5rem auto 0;
-        font-size:3rem;
+        font-size:3.5rem;
         max-width:1200px;
       }
 
       main h2 {
-        margin:-1rem auto 3rem;
+        margin:1rem auto 4rem;
         font-size:2rem;
       }
 
