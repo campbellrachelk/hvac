@@ -249,6 +249,13 @@
         max-width: 1045px;
       }
 
+      .theRightWay {
+        font-size: 2.5rem;
+        text-align: center;
+        margin: 4rem auto 4rem;
+        max-width: 875px;
+      }
+
       .greaterMD {
         padding:0;
       }
@@ -394,7 +401,7 @@ line-height:1;
       }
 
       .card {
-        width: 18rem; 
+        width: 27rem; 
         display:inline-block;
         margin: 0 3rem;
         background-color:#f7f7f7;
@@ -507,6 +514,13 @@ line-height:1;
       .testimonials {
         margin: 0 auto 4rem;
         padding: 3rem 10rem;
+      }
+
+      .theRightWay {
+        font-size: 2.5rem;
+        text-align: center;
+        margin: 4rem auto 4rem;
+        max-width: 875px;
       }
 
       .contactGrey {
