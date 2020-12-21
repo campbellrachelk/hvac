@@ -383,15 +383,6 @@ line-height:1;
         text-align:left;
       }
 
-      .background {
-        background-image:url(copper.jpg);
-        background-size:cover;
-        padding:4rem;
-      }
-
-      .background .lists {
-        background-color:white;
-      }
         
       body {
         margin:0;
@@ -493,7 +484,7 @@ line-height:1;
       }
 
       .servicesTitle {
-        padding: 2rem 11rem;
+        padding: 2rem 11rem 0;
         font-size: 3.5rem;
         font-family: 'Roboto Condensed', sans-serif;
       }
